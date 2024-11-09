@@ -47,11 +47,6 @@ Install dependencies by running:
 
 
 ## How to Run
-
-1. Clone the repository or download the project.
-2. Install dependencies by running the command above.
-3. Open a terminal, navigate to the project directory, and run:
-
 1. Install Node.js if not already installed.
 2. Run the game with:
    ```bash
