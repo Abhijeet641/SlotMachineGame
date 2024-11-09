@@ -1,43 +1,68 @@
 # Slot Machine Game
 
-A simple, interactive Slot Machine game implemented in JavaScript, played in the terminal. This project lets users place bets, spin the reels, and potentially win prizes based on matching symbols.
+This is a simple text-based Slot Machine game built with JavaScript. Players can deposit money, place bets, and spin the reels. The game includes a payout system based on different symbols, including a jackpot for matching three 'A' symbols. Track your balance, winnings, and play multiple rounds.
 
 ## Features
 
-- **Deposit**: Allows users to deposit money to start the game.
-- **Betting Lines**: Users can choose between 1 to 3 lines to bet on.
-- **Bet Amount**: Players decide the amount to bet per line.
-- **Randomized Spins**: Simulates spinning reels with random symbols.
-- **Winnings Calculation**: Calculates winnings based on matched symbols.
-- **Play Again Option**: Players can continue playing until they run out of balance.
+- **Deposit & Bet**: Deposit funds and place bets on 1-3 lines.
+- **Reel Spin**: Spin the reels and try to match symbols for winnings.
+- **Jackpot**: Double your bet if 3 'A' symbols match on a line.
+- **Balance Tracking**: View current balance, total bets, and winnings.
+- **Play Again**: Option to play again or quit.
 
-## Game Rules
+## Symbols and Payouts
 
-- **Symbols and Values**:
-  - Symbol `A` appears twice and has a value of 5.
-  - Symbol `B` appears four times and has a value of 4.
-  - Symbol `C` appears six times and has a value of 3.
-  - Symbol `D` appears eight times and has a value of 2.
-- **Winning Criteria**: Players win when all symbols in a line match. The winnings are calculated by multiplying the bet amount by the symbol value.
+| Symbol | Count | Value | Description |
+|--------|-------|-------|-------------|
+| A      | 2     | 5     | Highest payout symbol |
+| B      | 4     | 4     | Mid-tier payout symbol |
+| C      | 6     | 3     | Lower payout symbol |
+| D      | 8     | 2     | Lowest payout symbol |
+
+### Jackpot:
+- If three "A" symbols appear on a line, your winnings for that line are doubled.
 
 ## How to Play
 
-1. Run the program in a Node.js environment.
-2. Enter a deposit amount to start the game.
-3. Select the number of lines (1-3) to bet on.
-4. Enter the bet amount per line (must be within available balance).
-5. The reels will spin and display symbols.
-6. Winnings are added to the balance if any line has matching symbols.
-7. Choose to play again or quit if the balance runs out.
+1. **Start the Game**:
+   - Run the `slotMachine.js` file in a Node.js environment.
+   - Enter your deposit amount. Type `q` to quit anytime.
+
+2. **Bet**:
+   - Select the number of lines (1-3) you want to bet on.
+   - Enter the amount you'd like to bet per line.
+
+3. **Spin**:
+   - Spin the reels and see if you win based on symbol combinations.
+
+4. **Play Again**:
+   - After each round, you can play again or quit.
 
 ## Requirements
 
-- **Node.js**: Install Node.js to run the game using the `prompt-sync` package for user input.
+- [Node.js](https://nodejs.org/) (v12 or higher)
+- `prompt-sync` package to handle user input.
+
+Install dependencies by running:
+
 
 ## How to Run
+
+1. Clone the repository or download the project.
+2. Install dependencies by running the command above.
+3. Open a terminal, navigate to the project directory, and run:
 
 1. Install Node.js if not already installed.
 2. Run the game with:
    ```bash
    node SlotMachine.js
+
+   
+Follow the on-screen prompts to play!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
 
